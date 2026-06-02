@@ -1,36 +1,54 @@
-
 # Raízes do Nordeste - Backend
 
-## Sobre o Projeto
+## Descrição
 
-Projeto desenvolvido para a disciplina de Projeto Multidisciplinar da trilha de Engenharia de Software / Back-End.
+Sistema Back-End desenvolvido para a Rede Raízes do Nordeste.
 
-O sistema foi projetado para atender a Rede Raízes do Nordeste, uma franquia de alimentação em expansão que necessita controlar pedidos, estoque, pagamentos e programa de fidelidade através de múltiplos canais de venda.
+O projeto foi desenvolvido como estudo de caso para gerenciamento de pedidos multicanal, controle de estoque por unidade, programa de fidelidade e integração com pagamento mock.
 
-## Objetivos
-
-* Centralizar pedidos da rede.
-* Controlar estoque por unidade.
-* Permitir rastreabilidade através do campo canalPedido.
-* Simular integração com gateway de pagamento.
-* Aplicar conceitos de segurança e LGPD.
-
-## Tecnologias Planejadas
+## Tecnologias Utilizadas
 
 * Java 17
 * Spring Boot
-* Spring Security
-* JWT
 * Spring Data JPA
-* Swagger/OpenAPI
+* H2 Database
 * Maven
+* Swagger / OpenAPI
 
-## Fluxo Principal do MVP
+## Arquitetura
 
-Pedido → Pagamento Mock → Atualização de Status
+O sistema está organizado em camadas:
+
+* API
+* Application
+* Domain
+* Infrastructure
+
+## Funcionalidades
+
+* Autenticação de usuários
+* Criação de pedidos
+* Atualização de status de pedidos
+* Pagamento mock
+* Controle de estoque
+* Programa de fidelidade
+
+## Documentação da API
+
+Swagger:
+
+http://localhost:8080/swagger-ui.html
+
+## Estrutura do Projeto
+
+```text
+src/main/java/br/com/raizes
+├── api
+├── application
+├── domain
+└── infrastructure
+```
 
 ## Autor
 
 João Gabriel Queirós Silva
-
-R.U: 4738763
